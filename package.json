@@ -1,0 +1,29 @@
+{
+	"name": "redux4ways",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest"
+	},
+	"dependencies": {
+		"react": "~15.4.0",
+		"react-native": "0.41.2",
+		"react-redux": "^5.0.2",
+		"redux": "^3.6.0",
+		"redux-loop": "^2.2.2",
+		"redux-observable": "^0.13.0",
+		"redux-saga": "^0.14.3",
+		"redux-thunk": "^2.2.0",
+		"rxjs": "^5.1.1"
+	},
+	"devDependencies": {
+		"babel-jest": "18.0.0",
+		"babel-preset-react-native": "1.9.1",
+		"jest": "18.1.0",
+		"react-test-renderer": "~15.4.0"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
