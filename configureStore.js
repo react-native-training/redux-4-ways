@@ -1,13 +1,12 @@
 import { createStore, applyMiddleware } from 'redux'
 import app from './reducers'
 
-import createSagaMiddleware from 'redux-saga'
-import dataSaga from './saga'
+import { createEpicMiddleware } from 'redux-observable'
+import fetchUserEpic from './epic'
 
-const sagaMiddleware = createSagaMiddleware()
+const epicMiddleware = createEpicMiddleware(fetchUserEpic)
 
-export default function configureStore() {
-  const store = createStore(app, applyMiddleware(sagaMiddleware))
-  sagaMiddleware.run(dataSaga)
+export default function configureStore () {
+  const store = createStore(app, applyMiddleware(epicMiddleware))
   return store
 }
