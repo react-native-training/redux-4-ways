@@ -2,10 +2,10 @@
 
 To see a particular implementation, click below:
 
-###[Redux Thunk]   
+###[Redux Thunk](https://github.com/dabit3/redux-4-ways/tree/thunk)   
 
-###[Redux Saga]   
+###[Redux Saga](https://github.com/dabit3/redux-4-ways/tree/saga)    
 
-###[Redux Observable]   
+###[Redux Observable](https://github.com/dabit3/redux-4-ways/tree/observable)   
 
-###[Redux Loop]
+###[Redux Loop](https://github.com/dabit3/redux-4-ways/tree/loop)
