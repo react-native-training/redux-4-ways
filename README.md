@@ -10,4 +10,4 @@ To see a particular implementation, click below:
 
 ###[Redux Observable](https://github.com/dabit3/redux-4-ways/tree/observable)   
 
-###[Redux Loop](https://github.com/dabit3/redux-4-ways/tree/loop)
+###[Redux Promise Middleware](https://github.com/dabit3/redux-4-ways/tree/promise-middleware)

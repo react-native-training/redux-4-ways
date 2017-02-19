@@ -13,6 +13,7 @@
 		"redux": "^3.6.0",
 		"redux-loop": "^2.2.2",
 		"redux-observable": "^0.13.0",
+		"redux-promise-middleware": "^4.2.0",
 		"redux-saga": "^0.14.3",
 		"redux-thunk": "^2.2.0",
 		"rxjs": "^5.1.1"
