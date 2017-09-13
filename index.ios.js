@@ -4,10 +4,8 @@ import {
 } from 'react-native'
 
 import { Provider } from 'react-redux'
-import configureStore from './configureStore'
+import store from './configureStore'
 import App from './app'
-
-const store = configureStore()
 
 const ReduxApp = () => (
   <Provider store={store}>

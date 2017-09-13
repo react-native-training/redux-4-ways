@@ -1,13 +1,20 @@
-import { createStore, applyMiddleware } from 'redux'
-import app from './reducers'
-
+import { createStore, applyMiddleware, compose } from 'redux'
+import rootReducer from './reducers';
 import createSagaMiddleware from 'redux-saga'
 import dataSaga from './saga'
 
+import { persistStore, autoRehydrate} from 'redux-persist';
+
+import {AsyncStorage} from 'react-native';
+
 const sagaMiddleware = createSagaMiddleware()
 
-export default function configureStore() {
-  const store = createStore(app, applyMiddleware(sagaMiddleware))
-  sagaMiddleware.run(dataSaga)
-  return store
-}
+const store = createStore(rootReducer, compose(autoRehydrate(), applyMiddleware(sagaMiddleware)))
+
+sagaMiddleware.run(dataSaga)
+
+persistStore(store, { storage: AsyncStorage }, () => {
+  console.log('restored');
+});
+
+export default store;
